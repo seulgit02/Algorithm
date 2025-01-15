@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 using namespace std;
 int main(void)
 {
@@ -24,7 +25,7 @@ int main(void)
             count = 0; // 사람 수 초기화
         }
     }
-    cout << "count: " << count << endl;
+    cout << count << endl;
 
     return 0;
 }
