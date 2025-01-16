@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="02_01_모험가길드.cpp">
+    <ClCompile Include="02_01_모험가길드%28greedy_algorithm%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="fibonacci%28recursive_function%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
