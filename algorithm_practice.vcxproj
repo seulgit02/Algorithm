@@ -139,7 +139,10 @@
     <ClCompile Include="개미전사%28dynamic_programming%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="바닥공사%28dynamic_programming%29.cpp" />
+    <ClCompile Include="바닥공사%28dynamic_programming%29.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="효율적인화폐구성%28dynamic_programming%29.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
