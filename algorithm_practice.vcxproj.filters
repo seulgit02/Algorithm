@@ -33,5 +33,11 @@
     <ClCompile Include="효율적인화폐구성%28dynamic_programming%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="다익스트라알고리즘1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="다익스트라알고리즘2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
