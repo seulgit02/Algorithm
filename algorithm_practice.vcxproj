@@ -142,7 +142,6 @@
     <ClCompile Include="다익스트라알고리즘1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="다익스트라알고리즘2.cpp" />
     <ClCompile Include="바닥공사%28dynamic_programming%29.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

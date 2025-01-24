@@ -58,6 +58,7 @@ void dijkstra(int start) {
 }
 
 int main(void) {
+
     dijkstra(0);
     for (int i = 0; i < number; i++) {
         printf("%d\t", d[i]);
