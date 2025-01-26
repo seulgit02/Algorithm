@@ -36,5 +36,11 @@
     <ClCompile Include="다익스트라알고리즘1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="다익스트라개선.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="선택정렬%28selection_sort%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
