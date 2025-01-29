@@ -5,13 +5,13 @@ using namespace std;
 int N, maxCandy = 1;
 vector<string> arr;
 
-int checkMaxCandy() {
+void checkMaxCandy() {
 
     // 가로방향 check
     for (int i = 0; i < N; i++) {
         int count = 1;
         for (int j = 1; j < N; j++) {
-            if (arr[i][j] == arr[j][j - 1]) {
+            if (arr[i][j] == arr[i][j - 1]) {
                 count++;
             }
             else {
@@ -31,10 +31,9 @@ int checkMaxCandy() {
             else {
                 count = 1;
             }
+            maxCandy = max(maxCandy, count);
         }
-        maxCandy = max(maxCandy, count);
     }
-    return maxCandy;
 }
 
 int main(void) {
@@ -50,28 +49,30 @@ int main(void) {
         for (int j = 0; j < N; j++) {
             if (j + 1 < N && arr[i][j] != arr[i][j + 1]) {
                 swap(arr[i][j], arr[i][j + 1]);
-                maxCandy = checkMaxCandy();
+                checkMaxCandy();
                 // 원상복구 필요
                 swap(arr[i][j], arr[i][j + 1]);
             }
-        }
-        // 세로 교환
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                if (i + 1 < N && arr[i][j] != arr[i + 1][j]) {
-                    swap(arr[i][j], arr[i + 1][j]);
-                    maxCandy = checkMaxCandy();
-                    swap(arr[i][j], arr[i + 1][j]);
+            if (i + 1 < N && arr[i][j] != arr[i + 1][j]) {
+                swap(arr[i][j], arr[i + 1][j]);
+                checkMaxCandy();
+                swap(arr[i][j], arr[i + 1][j]);
 
-                }
+            }
+        }   
+    }
+
+    for (int i = 0; i < N; i++) {
+        // 세로 교환
+        for (int j = 0; j < N; j++) {
+            if (i + 1 < N && arr[i][j] != arr[i + 1][j]) {
+                swap(arr[i][j], arr[i + 1][j]);
+                checkMaxCandy();
+                swap(arr[i][j], arr[i + 1][j]);
+
             }
         }
     }
-
-
-
-    
-
     cout << maxCandy << endl;
     return 0;
 }
