@@ -48,7 +48,10 @@
     <ClCompile Include="사탕게임.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="수어이쓰기.cpp">
+    <ClCompile Include="수이어쓰기%28baekjoon_1748%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="123더하기%28baekjoon_9095%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
