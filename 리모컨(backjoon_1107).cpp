@@ -22,12 +22,12 @@ void dfs(int idx, int click) {
 }
 
 int main(void) {
-    cin >> channel; 
-    cin >> brokenCnt;
+    cin >> channel; // 타겟 채널
+    cin >> brokenCnt; // 고장난 버튼 개수
     broken.resize(brokenCnt+1, false);
     for (int i = 0; i < brokenCnt; i++) {
         cin >> brokenNum;
-        broken[brokenNum + 1] = true;
+        broken[brokenNum] = true;
 
     }
     // 1) channel == 100인 경우
