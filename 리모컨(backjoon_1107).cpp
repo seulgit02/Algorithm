@@ -6,14 +6,16 @@ using namespace std;
 vector <bool>broken;
 int channel, clickCount, brokenCnt, brokenNum;
 
+/*탐색*/
 void dfs(int idx, int click) {
+    // 버튼 순차적으로 탐색
     for (int i = 0; i < 10; i++) {
         if (!broken[i]) {
-            int newBtn = click * 10 + i;
-            string strNewBtn = to_string(newBtn);
-            int cnt = abs(channel - newBtn) + strNewBtn.length();
+            int newBtn = click * 10 + i; //숫자입력으로 자릿수 추가
+            string strNewBtn = to_string(newBtn); 
+            int cnt = abs(channel - newBtn) + strNewBtn.length(); // 숫자 자릿수 카운트
             clickCount = min(clickCount, cnt);
-
+            // 최대 6자리 숫자까지 탐색(채널 범위: 0~500,000)
             if (idx < 6) {
                 dfs(idx + 1, newBtn);
             }
