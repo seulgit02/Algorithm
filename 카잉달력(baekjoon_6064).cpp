@@ -24,6 +24,12 @@ int calculateDate(int M, int N, int X, int Y) {
     lcmResult = lcm(M, N);
     // 2) x, y가 몇번째 해인지 구하기
     result = -1;
+    for (int i = X; i <= lcmResult; i++) {
+        if (i % M == X && i % N == Y) {
+            result = i;
+            break;
+        }
+    }
     for (int i = X; i <= lcmResult; i +=M) {
         if (i % N == Y % N) {
             result = i;
