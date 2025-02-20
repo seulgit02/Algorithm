@@ -78,5 +78,8 @@
     <ClCompile Include="N과M_1%28baekjoon_15649%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="스타트와링크%2814889%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
