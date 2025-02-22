@@ -11,6 +11,7 @@ int S[20][20];
  link 팀) visited[x] == 0인 원소
 */
 void team(int a, int n) {
+    cout << "team(" << a << ", " << n << ")\n";
     // 팀 배정인원이 다 찬 경우 팀의 능력치 계산
     if (a == N / 2) {
         int start = 0, link = 0;
@@ -33,6 +34,7 @@ void team(int a, int n) {
             if (!visited[i]) {
                 visited[i] = 1;
                 team(a + 1, i + 1);
+                cout << "원소 [" << i << "] 반납\n";
                 visited[i] = 0;
             }
         }
