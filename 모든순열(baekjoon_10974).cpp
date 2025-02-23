@@ -8,7 +8,7 @@ int visited[9];
 
 void permutation(int num) {
     if (num == N) {
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++) { 
             cout << arr[i] << ' ';
         }
         cout << '\n';
@@ -18,10 +18,12 @@ void permutation(int num) {
         if (!visited[i]) {
             visited[i] = 1;
             arr[num] = i + 1;
+            cout << "arr[" << num << "] = " << i + 1 << ' ';
             permutation(num + 1);
             visited[i] = false;
         }
     }
+    cout << endl;
 
 }
 
