@@ -93,5 +93,8 @@
     <ClCompile Include="스위치켜고끄기%28baekjoon_1244%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="줄세우기%28baekjoon_10431%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
