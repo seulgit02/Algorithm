@@ -96,5 +96,8 @@
     <ClCompile Include="줄세우기%28baekjoon_10431%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="돌게임%28baekjoon_9655%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
