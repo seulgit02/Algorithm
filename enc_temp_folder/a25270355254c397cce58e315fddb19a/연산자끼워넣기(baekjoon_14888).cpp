@@ -1,8 +1,9 @@
 #include <iostream>
+
 using namespace std;
 
 int N;
-int operands[11];
+int* operands = new int[N];
 int operators[4];
 int min_value = 1000000001;
 int max_value = -1000000001;
@@ -20,13 +21,8 @@ void getAnswer(int result, int index) {
             if (i == 0) getAnswer(result + operands[index], index + 1);
             else if (i == 1) getAnswer(result - operands[index], index + 1);
             else if (i == 2) getAnswer(result * operands[index], index + 1);
-            else {
-                if (result < 0)getAnswer(-(-result / operands[index]), index + 1);
-                else getAnswer(result / operands[index], index + 1);
-            }
-            operators[i]++;// 재귀호출이니까 연산자 개수 복구
+            else getAnswer(result / operands[index], index + 1);
         }
-        
     }
     return;
 }
