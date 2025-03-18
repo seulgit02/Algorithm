@@ -108,5 +108,8 @@
     <ClCompile Include="로또%28baekjoon_6603%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="다리놓기%28baekjoon_1010%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

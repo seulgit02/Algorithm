@@ -10,6 +10,7 @@ int combination[31][31];
 
 
 int main(void) {
+    cin >> cnt;
     combination[1][0] = 1;
     combination[1][1] = 1;
 
@@ -22,10 +23,13 @@ int main(void) {
                 combination[i][j] = combination[i - 1][j - 1] + combination[i - 1][j];
             }
         }
+        results.push_back(combination[M][N]);
 
     }
-    cout << combination[M][N];
-
+    
+    for (int result : results) {
+        cout << result << '\n';
+    }
 
     return 0;
 }
