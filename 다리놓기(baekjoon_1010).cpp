@@ -20,6 +20,7 @@ int main(void) {
         for (int i = 2; i <= M; i++) {
             combination[i][0] = 1;
             for (int j = 1; j <= N; j++) {
+                // (특정 원소를 포함해 j개를 선택하는 경우) + (특정 원소 포함하지 않고 j개를 선택하는 경우)
                 combination[i][j] = combination[i - 1][j - 1] + combination[i - 1][j];
             }
         }

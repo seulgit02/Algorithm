@@ -111,5 +111,8 @@
     <ClCompile Include="다리놓기%28baekjoon_1010%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="겉녋이구하기%28baekjoon_16931%29.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
